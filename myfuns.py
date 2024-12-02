@@ -89,7 +89,7 @@ def myIBCF(newuser, S, k=10):
             continue
             
         # Get relevant similarities and ratings
-        sims = S[movie_id][overlap].values
+        sims = S.loc[movie_id, overlap].values
         ratings = newuser[overlap]
         
         # Calculate weighted average
